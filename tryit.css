@@ -1,0 +1,125 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column1 {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  height: 700px; /* Should be removed. Only for demonstration */
+}
+.column2 {
+  float: right;
+  width: 80%;
+  padding: 10px;
+  height: 700px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.btn-group{
+  padding: 4px;
+  margin: 2px;
+  margin-left: 80px;
+}
+.btn .btn-secondary{
+  float: right;
+}
+.btn-group #btn-secondary2{
+  margin-left: 40px;
+}
+#form{
+  margin-left: 400px;
+}
+img{
+  width: 40px;
+  height: 40px;
+  float: right;
+  
+}
+.carousel .slide{
+  height: 210px;
+      min-height: 320px;
+}
+.carousel-item{
+      height: 200px;
+      min-height: 300px;
+      background: no-repeat scroll center scroll;
+      -webkit-background-size: cover;
+      background-size: cover;
+    }
+
+/* counter css */
+.counter-box{
+  width: 100%;
+  height: 100%;
+  background: #fff;
+  padding: 20px 0;
+  border-radius: 5px;
+  box-shadow: 0 0 20px -4px #66676c;
+}
+h2, span{
+    display: inline-block;
+    margin: 15px 0;
+   
+    color: #000;
+}
+ul li{
+  list-style-type: none;
+}
+
+.subcolumn{
+  align-items: inline-blocks;
+}
+
+/* counter css ends here*/
+
+/*----mediaquery----*/
+
+/*// Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575.98px) { 
+ .btn-group{
+  padding: 1px;
+  margin: 1px;
+  margin-left: 10px;
+}
+ h2, span{
+    display: inline-block;
+    margin: 2px 0;
+   
+    color: #000;
+}
+.counter-box{
+  width: 50%;
+  height: 50%;
+  background: red;
+  padding: 2px 0;
+  border-radius: 2px;
+  box-shadow: 0 0 20px -4px #66676c;
+}
+ }
+
+/*// Small devices (landscape phones, less than 768px)*/
+@media (max-width: 767.98px) { 
+
+ }
+
+/*// Medium devices (tablets, less than 992px)*/
+@media (max-width: 991.98px) { 
+
+ }
+
+/*// Large devices (desktops, less than 1200px)*/
+@media (max-width: 1199.98px) { 
+
+}
+
+/*// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width8/
+
+/*----mediaquery----*/
